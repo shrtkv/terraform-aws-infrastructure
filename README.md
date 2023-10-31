@@ -8,22 +8,11 @@ This Terraform code is designed to set up AWS resources, including an EC2 instan
   - AWS IAM Role and Policy: An IAM role that the EC2 instance assumes, along with an associated policy that allows it to perform specific actions on the S3 bucket.
   - AWS Security Group: A security group to define which incoming and outgoing network traffic is allowed to the EC2 instance.
 
-Setting Variables:
-Variables in this Terraform code can be set in a few ways:
-
-## Default Values in variables.tf: 
-Some variables have default values set in the variables.tf file. These values will be used unless overridden.
-Using terraform.tfvars or *.auto.tfvars files: You can create a terraform.tfvars file to set values for your variables.
-Environment Variables with TF_VAR_ Prefix: As an alternative to using *.tfvars files, you can set Terraform variables via environment variables by prefixing the variable name with TF_VAR_.
-
 ## Setting Variables:
 Variables in this Terraform code can be set in a few ways:
 
 ### Default Values in variables.tf: 
 - Some variables have default values set in the variables.tf file. These values will be used unless overridden.
-
-### Using terraform.tfvars or *.auto.tfvars files:
-- You can create a terraform.tfvars file to set values for your variables.
 
 ### Environment Variables with TF_VAR_ Prefix:
 - As an alternative to using *.tfvars files, you can set Terraform variables via environment variables by prefixing the variable name with TF_VAR_.
