@@ -36,7 +36,7 @@ variable "key_name" {
 variable "security_group_id" {
   description = "ID of an external security group to use for the EC2 instance. If empty, the allow_ssh group is used."
   type        = string
-  default     = ""  # Default to no external security group
+  default     = "" 
 }
 
 
