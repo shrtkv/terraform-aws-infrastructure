@@ -2,10 +2,12 @@
 This Terraform code is designed to set up AWS resources, including an EC2 instance with a specific IAM role and policy for S3 access, an S3 bucket, and security group settings for the EC2 instance.
 
 ## Resources Created:
-AWS S3 Bucket: An S3 bucket for storing objects.
-AWS EC2 Instance: A virtual server in the AWS cloud.
-AWS IAM Role and Policy: An IAM role that the EC2 instance assumes, along with an associated policy that allows it to perform specific actions on the S3 bucket.
-AWS Security Group: A security group to define which incoming and outgoing network traffic is allowed to the EC2 instance.
+
+  - AWS S3 Bucket: An S3 bucket for storing objects.
+  - AWS EC2 Instance: A virtual server in the AWS cloud.
+  - AWS IAM Role and Policy: An IAM role that the EC2 instance assumes, along with an associated policy that allows it to perform specific actions on the S3 bucket.
+  - AWS Security Group: A security group to define which incoming and outgoing network traffic is allowed to the EC2 instance.
+
 Setting Variables:
 Variables in this Terraform code can be set in a few ways:
 
