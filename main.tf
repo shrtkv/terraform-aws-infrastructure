@@ -57,7 +57,7 @@ resource "aws_iam_policy" "s3_list_policy" {
           "s3:PutObject",
           "s3:DeleteObject"
         ],
-        Resource = "${aws_s3_bucket.bucket.arn}*"  # Grant permissions to all objects in the bucket
+        Resource = "${aws_s3_bucket.bucket.arn}*" 
       }
     ]
   })
@@ -80,7 +80,7 @@ resource "aws_security_group" "allow_ssh" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # Not recommended for production, restrict to your IP
+    cidr_blocks = ["0.0.0.0/0"] 
   }
 
   egress {
